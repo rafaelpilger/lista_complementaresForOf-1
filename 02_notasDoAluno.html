@@ -7,9 +7,18 @@
     */
 
     //Entrada
-
+    const notasAluno = [7, 5, 9, 8];
+    let menornota=notasAluno[1]
+    let maiornota = notasAluno[2]
+    let media = 0
 
     //Processamento
+for(let i= 0;i<notasAluno.length;i++){
+    media += notasAluno[i]/4
+}
+alert(`a maior nota do aluno foi ${maiornota}`)
+alert(`a menor nota do aluno foi ${menornota}`)
+alert(`a média do aluno foi ${media}`)
 
 
     //Saída

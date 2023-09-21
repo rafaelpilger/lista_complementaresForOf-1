@@ -7,11 +7,15 @@
     Apresente a lista corrigida ao final do programa.
     */
 
-    //Entrada
-
+    let nomes = ["Hilário", "Rafaela", "José", "Bárbara", "Fábio", "Júlia"];
+    let calouros = [];
 
     //Processamento
-
+   for (nomes2 of nomes) {
+        nomes2 = nomes2.replace('á', 'a').replace('é', 'e').replace('ú', 'u');
+        calouros.push(nomes2);
+   }
+   alert(calouros);
 
     //Saída
 

@@ -6,10 +6,21 @@
     Pergunte para o usuário qual das bebidas que possui álcool (leia bebida por bebida do Array) e apresente apenas as bebidas permitidas para menores de 18 anos, ou seja, que não possuem álcool.
     */
 
-    //Entrada
-
+  //Entrada
+  let bebidas = ["Cerveja", "Vinho", "Suco Natural", "Tequila", "Água", "Refrigerante", "Vodka"]
+    let paraMenores = [];
 
     //Processamento
+    for (n of bebidas) {
+        álcool = prompt(`Digite se ${n} possui álcool: `).toUpperCase();
+        if (álcool == 'N'|| álcool == 'NÃO') {
+            paraMenores.push(n);
+        } 
+    }
+    alert(paraMenores);
+
+    //Saída
+
 
 
     //Saída

@@ -7,12 +7,18 @@
     Apresente as cores preferidas e a quantidade de cores que o usuário gosta.
     */
 
-    //Entrada
-
-
+     //Entrada
+    let cores = ["Branco", "Azul", "Marrom", "Cinza", "Verde", "Amarelo", "Vermelho", "Preto"]
+    let preferida = [];
+    
     //Processamento
-
-
+    for (cor of cores) {
+        let pergunta = prompt(`Digite se você gosta da cor ${cor}`).toUpperCase();
+        if (pergunta == 'S' || pergunta == 'SIM') {
+            preferida.push(cor);
+        }
+    }
+    alert(`As sua cores preferidas são ${preferida} e o total delas é ${preferida.length}`);
     //Saída
 
 </script>

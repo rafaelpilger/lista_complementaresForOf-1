@@ -5,12 +5,23 @@
     Apresente as quantidades no final do programa.
     */
 
-    //Entrada
-
-
+     //Entrada
+    i = 0 
+    consoante = 0
+    let palavras = prompt('Digite uma palavra: ').trim().toUpperCase();
+    let quantidade = palavras.slice();
+    let vogais = [];
     //Processamento
-
-
+    for (letra of palavras) {
+        if (letra == 'A' || letra == 'E' || letra == 'I' || letra == 'O' || letra == 'U') {
+            i++;
+        }
+        else {
+            consoante++; 
+        }
+    }
+    alert(`Na palavra ${palavras}, há ${i} vogal(is) e ${consoante} consoante(s)`);
     //Saída
 
+</script>
 </script>
